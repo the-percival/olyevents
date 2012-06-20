@@ -1,37 +1,12 @@
-<h1>Listing events</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Start date</th>
-    <th>End date</th>
-    <th>Featured</th>
-    <th>Cost</th>
-    <th>All ages</th>
-    <th>Venue</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @events.each do |event| %>
-  <tr>
-    <td><%= event.name %></td>
-    <td><%= event.description %></td>
-    <td><%= event.start_date %></td>
-    <td><%= event.end_date %></td>
-    <td><%= event.featured %></td>
-    <td><%= event.cost %></td>
-    <td><%= event.all_ages %></td>
-    <td><%= event.venue %></td>
-    <td><%= link_to 'Show', event %></td>
-    <td><%= link_to 'Edit', edit_event_path(event) %></td>
-    <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <div class="<%= event.name %> <%= event.featured %>">
+    <h3><%= event.name %></h3>
+    <p><%= event.description %></p>
+    <p><%= event.start_date %></p>
+    <p><%= event.end_date %></p>
+    <p><%= event.featured %></p>
+    <p>Cost: <%= event.cost %></p>
+    <p>All ages:<%= event.all_ages %></p>
+    <p>Venue: <%= event.venue %></p>
   </tr>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Event', new_event_path %>
