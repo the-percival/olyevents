@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}/* HTML5 display-role reset for older browsers */article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+
+
+/* struct */
+
+/* typography */
+body {
+  font: 14px/1.6 "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #333;
+}
+
+/* layout and grid */
+.container { 
+  position: relative; 
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.row {
+  margin-left: 0;
+}
+
+.column.left, .columns.left { 
+  margin-left: 0; 
+}
+
+.column.right, .columns.right { 
+  margin-right: 0; 
+}
+
+.container { 
+  width: 300px;
+}
+
+.container .columns,
+.container .column { 
+  margin: 10px 0;
+}
+
+.column .column,
+.column .columns,
+.columns .column,
+.columns .columns {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container .one.column,
+.container .one.columns,
+.container .two.columns,
+.container .three.columns,
+.container .four.columns,
+.container .five.columns,
+.container .six.columns,
+.container .seven.columns,
+.container .eight.columns,
+.container .nine.columns,
+.container .ten.columns,
+.container .eleven.columns,
+.container .twelve.columns,
+.container .thirteen.columns,
+.container .fourteen.columns,
+.container .fifteen.columns,
+.container .sixteen.columns,
+.container .one-third.column,
+.container .two-thirds.column {
+  width: 300px;
+}
+
+@media only screen and (min-width: 480px) {
+
+  .row { 
+  }
+  
+  .container { 
+    width: 460px;
+  }
+  
+  .container .column,
+  .container .columns { 
+    float: left; 
+    display: inline; 
+    margin: 10px 0;
+  }
+  
+  .column .column,
+  .column .columns,
+  .colomns .column,
+  .columns .columns {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column { 
+    width: 460px; 
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .container { 
+    width: 580px;
+  }
+  
+  .container .column,
+  .container .columns { 
+    float: left; 
+    display: inline; 
+    margin: 0px 0 20px 0;
+  }
+  
+  .column .column,
+  .column .columns,
+  .colomns .column,
+  .columns .columns {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column { 
+    width: 580px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .row {
+    margin-left: -20px;
+  }
+  
+  .container { 
+    width: 748px;
+  }
+  
+  .container .column,
+  .container .columns { 
+    float: left; 
+    display: inline; 
+    margin-left: 20px; 
+    margin-right: 0px; 
+  }
+
+  .container .one.column,
+  .container .one.columns {
+      width: 28px;
+  }
+  
+  .container .two.columns                     { width: 76px; }
+  .container .three.columns                   { width: 124px; }
+  .container .four.columns                    { width: 172px; }
+  .container .five.columns                    { width: 220px; }
+  .container .six.columns                     { width: 268px; }
+  .container .seven.columns                   { width: 316px; }
+  .container .eight.columns                   { width: 364px; }
+  .container .nine.columns                    { width: 412px; }
+  .container .ten.columns                     { width: 460px; }
+  .container .eleven.columns                  { width: 508px; }
+  .container .twelve.columns                  { width: 556px; }
+  .container .thirteen.columns                { width: 604px; }
+  .container .fourteen.columns                { width: 652px; }
+  .container .fifteen.columns                 { width: 700px; }
+  .container .sixteen.columns                 { width: 748px; }
+
+  .container .one-third.column                { width: 256px; }
+  .container .two-thirds.column               { width: 512px; }
+}
+
+@media only screen and (min-width: 960px) {
+
+  .container {
+    width: 940px;
+  }
+  
+  .container .column,
+  .container .columns { 
+    float: left; 
+    display: inline; 
+  }
+  
+  .container .one.column,
+  .container .one.columns {
+    width: 40px;
+  }
+  
+  .container .two.columns                     { width: 100px; }
+  .container .three.columns                   { width: 160px; }
+  .container .four.columns                    { width: 220px; }
+  .container .five.columns                    { width: 280px; }
+  .container .six.columns                     { width: 340px; }
+  .container .seven.columns                   { width: 400px; }
+  .container .eight.columns                   { width: 460px; }
+  .container .nine.columns                    { width: 520px; }
+  .container .ten.columns                     { width: 580px; }
+  .container .eleven.columns                  { width: 640px; }
+  .container .twelve.columns                  { width: 700px; }
+  .container .thirteen.columns                { width: 760px; }
+  .container .fourteen.columns                { width: 820px; }
+  .container .fifteen.columns                 { width: 880px; }
+  .container .sixteen.columns                 { width: 940px; }
+
+  .container .one-third.column                { width: 280px; }
+  .container .two-thirds.column               { width: 600px; }
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .container {
+    width: 1260px;
+  }
+
+  .container .column,
+  .container .columns { 
+    float: left; 
+    display: inline; 
+  }
+
+
+  .container .one.column,
+  .container .one.columns {
+    width: 60px;
+  }
+
+  .container .two.columns                     { width: 140px; }
+  .container .three.columns                   { width: 220px; }
+  .container .four.columns                    { width: 300px; }
+  .container .five.columns                    { width: 380px; }
+  .container .six.columns                     { width: 460px; }
+  .container .seven.columns                   { width: 540px; }
+  .container .eight.columns                   { width: 620px; }
+  .container .nine.columns                    { width: 700px; }
+  .container .ten.columns                     { width: 780px; }
+  .container .eleven.columns                  { width: 860px; }
+  .container .twelve.columns                  { width: 940px; }
+  .container .thirteen.columns                { width: 1020px; }
+  .container .fourteen.columns                { width: 1100px; }
+  .container .fifteen.columns                 { width: 1180px; }
+  .container .sixteen.columns                 { width: 1260px; }
+
+  .container .one-third.column                { width: 460px; }
+  .container .two-thirds.column               { width: 780px; }
+}
+
+/* #Clearing from skeleton
+================================================== */
+
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020"; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; 
+  clear: both;
+}
+
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+.row,
+.clearfix {
+  *zoom: 1;
+}
