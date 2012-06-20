@@ -1,6 +1,5 @@
 class Venue < ActiveRecord::Base
   attr_accessible :address, :description, :name, :website, :wiki_url, :photo, :events, :delete_photo
-  before_validation { self.photo.clear if self.delete_photo == '1' }
   has_many :events
   
   has_attached_file :photo, :styles => { :large => "1200x1200", :medium => "600x600>", :thumb => "100x100>" },

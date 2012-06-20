@@ -2,7 +2,6 @@ class Event < ActiveRecord::Base
   acts_as_taggable
   acts_as_indexed :fields => [:name, :description, :venue, :tags]
   attr_accessible :all_ages, :cost, :description, :end_date, :featured, :name, :start_date, :venue_id, :photo, :delete_photo
-  before_validation { self.photo.clear if self.delete_photo == '1' }
   belongs_to :venue
   
   has_attached_file :photo, :styles => { :large => "1200x1200", :medium => "600x600>", :thumb => "100x100>" },
