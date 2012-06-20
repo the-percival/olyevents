@@ -5,7 +5,7 @@ class Event < ActiveRecord::Base
   before_validation { self.photo.clear if self.photo_asset == '1' }
   belongs_to :venue
   
-  has_attached_file :photo, :styles => { :large => "1200x1200", :medium => "600x600>", :small => "300x300", :thumb => "100x100>" },
+  has_attached_file :photo, :styles => { :large => "1200x1200", :medium => "600x600>", :thumb => "100x100>" },
       :storage => :s3,
       :bucket => ENV['S3_BUCKET_NAME'],
       :s3_credentials => {
