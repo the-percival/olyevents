@@ -1,5 +1,6 @@
 <% @events.each do |event| %>
   <div class="<%= event.name %> <%= event.featured %>">
+    <%= image_tag event.photo.url(:thumb) %>
     <h3><%= event.name %></h3>
     <p><%= event.description %></p>
     <p><%= event.start_date %></p>
