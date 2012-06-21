@@ -1,48 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @event.name %>
-  <% if @event.photo.file? %>
-    <%= image_tag @event.photo.url(:thumb) %>
-  <% end %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @event.description %>
-</p>
-
-<p>
-  <b>Start date:</b>
-  <%= @event.start_date %>
-</p>
-
-<p>
-  <b>End date:</b>
-  <%= @event.end_date %>
-</p>
-
-<p>
-  <b>Featured:</b>
-  <%= @event.featured %>
-</p>
-
-<p>
-  <b>Cost:</b>
-  <%= @event.cost %>
-</p>
-
-<p>
-  <b>All ages:</b>
-  <%= @event.all_ages %>
-</p>
-
-<p>
-  <b>Venue:</b>
-  <%= @event.venue %>
-</p>
-
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<% if @event.photo.file? %>
+  <%= image_tag @event.photo.url(:thumb) %>
+<% end %>
+<h3><%= @event.name %></h3>
+<p><%= @event.description %></p>
+<p>Starts: <%= @event.start_date %></p>
+<p>Ends: <%= @event.end_date %></p>
+<p><%= @event.featured %></p>
+<p>Cost: <%= @event.cost %></p>
+<p>All ages:<%= @event.all_ages %></p>
+<p>Venue: <%= @event.venue %></p>
