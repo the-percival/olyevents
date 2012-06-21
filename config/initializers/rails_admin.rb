@@ -42,7 +42,11 @@ RailsAdmin.config do |config|
   # config.label_methods << :description # Default is [:name, :title]
 
   #  ==> Global models configuration
-  # config.models do
+  config.models do
+    fields_of_type :datetime do
+      strftime_format '%l:%M %p %B %u, %Y'
+    end
+  end
   #   # Configuration here will affect all included models in all scopes, handle with care!
   #
   #   list do
