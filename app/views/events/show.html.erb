@@ -3,7 +3,9 @@
 <p>
   <b>Name:</b>
   <%= @event.name %>
-  <%= image_tag @event.photo.url(:thumb) %>
+  <% if @event.photo.file? %>
+    <%= image_tag @event.photo.url(:thumb) %>
+  <% end %>
 </p>
 
 <p>
