@@ -1,15 +1,17 @@
-<% @events.each do |event| %>
-  <div class="<%= event.name %> <%= event.featured %>">
-    <% if event.photo.file? %>
-      <%= image_tag event.photo.url(:thumb) %>
-    <% end %>
-    <h3><%= event.name %></h3>
-    <p><%= event.description %></p>
-    <p><%= event.start_date %></p>
-    <p><%= event.end_date %></p>
-    <p><%= event.featured %></p>
-    <p>Cost: <%= event.cost %></p>
-    <p>All ages:<%= event.all_ages %></p>
-    <p>Venue: <%= event.venue %></p>
-  </div>
-<% end %>
+<div id="events" class="sixteen columns">
+  <% @events.each do |event| %>
+    <div class="<%= event.name %> <%= event.featured %>">
+      <% if event.photo.file? %>
+        <%= image_tag event.photo.url(:thumb) %>
+      <% end %>
+      <h3><%= event.name %></h3>
+      <p><%= event.description %></p>
+      <p><%= event.start_date %></p>
+      <p><%= event.end_date %></p>
+      <p><%= event.featured %></p>
+      <p>Cost: <%= event.cost %></p>
+      <p>All ages:<%= event.all_ages %></p>
+      <p>Venue: <%= event.venue %></p>
+    </div>
+  <% end %>
+</div>
