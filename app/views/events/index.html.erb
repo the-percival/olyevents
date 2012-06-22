@@ -1,6 +1,6 @@
 <div id="events" class="sixteen columns">
   <% @events.each do |event| %>
-    <div class="<%= event.name %> <%= event.featured %>">
+    <div class="<%= event.name %> <% if event.featured == true %>featured<% end %>">
       <% if event.photo.file? %>
         <%= image_tag event.photo.url(:thumb) %>
       <% end %>
@@ -8,9 +8,12 @@
       <p><%= event.description %></p>
       <p>Starts: <%= event.start_date %></p>
       <p>Ends: <%= event.end_date %></p>
-      <p><%= event.featured %></p>
-      <p>Cost: <%= event.cost %></p>
-      <p>All ages:<%= event.all_ages %></p>
+      <p>Cost: <%= number_to_currency event.cost %></p>
+      <% if event.all_ages == true %>
+        <p>All ages!</p>
+      <% else %>
+        <p>21+ only</p>
+      <% end %>
       <p>Venue: <%= event.venue %></p>
     </div>
   <% end %>
