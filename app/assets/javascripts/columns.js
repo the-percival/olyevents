@@ -1,0 +1,1 @@
+$("#events").masonry itemSelector: ".event"
