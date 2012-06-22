@@ -7,16 +7,13 @@
         <% end %>
         <h3><%= event.name %></h3>
         <p><%= event.description %></p>
-        <p>Starts: <%= event.start_date %></p>
-        <p>Ends: <%= event.end_date %></p>
-        <p>Cost: <%= number_to_currency event.cost %></p>
+        <p>starts: <%= event.start_date %></p>
+        <p>at: <%= event.venue %></p>
         <% if event.all_ages == true %>
           <p>All ages!</p>
         <% else %>
           <p>21+ only</p>
         <% end %>
-        <p>Venue: <%= event.venue %></p>
-        <p>Tags: <%= event.tag_list %>
       </div>
     <% end %>
   </div>
