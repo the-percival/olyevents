@@ -229,6 +229,7 @@ DEPENDENCIES
   friendly_id (= 4.0.7)
   jasminerice
   jquery-rails
+  kaminari (= 0.13.0)
   omniauth (= 1.1.0)
   paper_trail (= 2.6.3)
   paperclip (= 3.1.2)

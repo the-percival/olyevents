@@ -1,0 +1,45 @@
+body {
+  background: url("bg.png");
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgba(0, 0, 0, .6);
+  color: #fff;
+  margin-bottom: 50px;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.7) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.7) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.7) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+  font-size: 12px;
+  line-height: 16px;
+  
+  nav.sixteen.columns {
+    padding: 10px;
+    margin: 0 0 0 20px;
+  }
+  
+  a, ul, li {
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+  
+}
+
+.event {
+
+  .inside {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, .5);
+  }
+
+}
+

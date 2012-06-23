@@ -1,20 +1,5 @@
-<div id="events" class="sixteen columns">
-  <div class="row">
-    <% @events.each do |event| %>
-      <div class="event <%= event.name %> <% if event.featured == true %>featured<% end %> four columns">
-        <% if event.photo.file? %>
-          <%= image_tag event.photo.url(:thumb) %>
-        <% end %>
-        <h3><%= event.name %></h3>
-        <p><%= event.description %></p>
-        <p>starts: <%= event.start_date %></p>
-        <p>at: <%= event.venue %></p>
-        <% if event.all_ages == true %>
-          <p>All ages!</p>
-        <% else %>
-          <p>21+ only</p>
-        <% end %>
-      </div>
-    <% end %>
+<div class="sixteen columns">
+  <div id="events" class="row">
+    <%= render :partial => "events/event", :collection => @events %>
   </div>
 </div>

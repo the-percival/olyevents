@@ -1,4 +1,7 @@
 class Venue < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+  
   attr_accessible :address, :description, :name, :website, :wiki_url, :photo, :events, :delete_photo
   has_many :events
   

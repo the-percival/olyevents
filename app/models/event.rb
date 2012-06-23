@@ -1,4 +1,7 @@
 class Event < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+  
   acts_as_taggable
   acts_as_indexed :fields => [:name, :description, :venue, :tags]
   attr_accessible :all_ages, :cost, :description, :end_date, :featured, :name, :start_date, :venue_id, :photo, :delete_photo, :tag_list
