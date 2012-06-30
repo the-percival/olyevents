@@ -15,6 +15,7 @@ gem 'aws-sdk', '1.5.4'
 gem 'paper_trail', '2.6.3'
 gem 'acts-as-taggable-on', '~> 2.3.1'
 gem 'acts_as_indexed', '0.7.8'
+gem 'thin'
 
 group :development, :test do
   gem 'jasminerice'
