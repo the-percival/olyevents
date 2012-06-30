@@ -45,7 +45,11 @@ rails_admin/multiselect/ui-icon-circle-triangle-n-dark.png: rails_admin/multisel
 rails_admin/multiselect/ui-icon-circle-triangle-n-light.png: rails_admin/multiselect/ui-icon-circle-triangle-n-light-63951a1feb158c987d5e473dc87ba1ad.png
 rails_admin/multiselect/ui-icon-circle-triangle-s-dark.png: rails_admin/multiselect/ui-icon-circle-triangle-s-dark-03eca32d57c6ea3674881671c1b92e89.png
 rails_admin/multiselect/ui-icon-circle-triangle-s-light.png: rails_admin/multiselect/ui-icon-circle-triangle-s-light-a02877fe58788fc6fa05616a3a57c8c8.png
+rails_admin/jquery.colorpicker.js: rails_admin/jquery.colorpicker-443fbf18f0ea44e061d33330fc99068d.js
+rails_admin/rails_admin.js: rails_admin/rails_admin-61f97ab99b7a53a96f273331a216ebe7.js
 rails_admin/base/README: rails_admin/base/README
+rails_admin/jquery.colorpicker.css: rails_admin/jquery.colorpicker-9b45d2697f2d0f573b542f2fdbe60432.css
+rails_admin/rails_admin.css: rails_admin/rails_admin-cb12e1e5aadc2e7d5dcf3ae320a97552.css
 jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png: jquery-ui/ui-bg_flat_0_aaaaaa_40x100-a1eb3e0764573ed4b261ca742ed96ac3.png
 jquery-ui/ui-bg_flat_75_ffffff_40x100.png: jquery-ui/ui-bg_flat_75_ffffff_40x100-841636c8f8d33987bb8d2f31e8ef92ca.png
 jquery-ui/ui-bg_glass_55_fbf9ee_1x400.png: jquery-ui/ui-bg_glass_55_fbf9ee_1x400-bbb04adbe79f471d8c88a2bc691231b6.png
