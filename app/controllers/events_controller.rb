@@ -2,13 +2,25 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.order(:start_date).page(params[:page])
+    @events = Event.upcoming.order("start_date asc").page(params[:page])
 
+    respond_to do |format|
+      format.js
+      format.html # index.html.erb
+      format.json { render json: @events }
+    end
+  end
+  
+  def today
+    @events = Event.today.page(params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }
     end
   end
+  
+  def thisweek
+  end  
 
   # GET /events/1
   # GET /events/1.json

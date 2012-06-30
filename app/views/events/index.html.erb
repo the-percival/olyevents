@@ -1,5 +1,6 @@
 <div class="sixteen columns">
   <div id="events" class="row">
-    <%= render :partial => "events/event", :collection => @events %>
+    <%= render @events %>
   </div>
+  <%= paginate @events %>
 </div>

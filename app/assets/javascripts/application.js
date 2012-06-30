@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require ui
+//= require infinitescroll
 //= require masonry
 //= require_tree .

@@ -6,7 +6,9 @@
     <h3><%= @event.name %></h3>
     <p><%= @event.description %></p>
     <p>starts: <%= @event.start_date %></p>
-    <p>at: <%= @event.venue.name %></p>
+    <% if @event.venue_id? %>
+      <p>at: <%= @event.venue.name %></p>
+    <% end %>
     <% if @event.all_ages == true %>
       <p>All ages!</p>
     <% else %>

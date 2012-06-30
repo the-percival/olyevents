@@ -44,7 +44,7 @@ RailsAdmin.config do |config|
   #  ==> Global models configuration
   config.models do
     fields_of_type :datetime do
-      strftime_format '%l:%M %p %B %u, %Y'
+      strftime_format '%l:%M %p %B %e, %Y' 
     end
   end
   #   # Configuration here will affect all included models in all scopes, handle with care!

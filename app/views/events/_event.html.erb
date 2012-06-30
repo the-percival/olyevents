@@ -4,6 +4,9 @@
       <% if event.photo.file? %>
         <%= image_tag event.photo.url(:thumb) %>
       <% end %>
+      <% if event.featured? %>
+        <span class="featured">Featured!</span>
+      <% end %>
       <h3><%= event.name %></h3>
       <p><%= event.description %></p>
       <p>starts: <%= event.start_date %></p>
