@@ -8,20 +8,19 @@
         <span class="featured">Featured!</span>
       <% end %>
       <h3><%= event.name %></h3>
-      <p><%= event.description %></p>
-      <p>starts: <%= event.start_date %></p>
+      <p><%= event.start_date %></p>
+      <% if event.cost == 0 %>
+        <p>Free!</p>
+      <% else %>
+        <%= number_to_currency event.cost %>
+      <% end %>
       <% if event.venue_id? %>
-        <p>at: <%= event.venue.name %></p>
+        <p><span class="small-ital">at</span> <%= event.venue.name %></p>
       <% end %>
       <% if event.all_ages == true %>
         <p>All ages!</p>
       <% else %>
         <p>21+</p>
-      <% end %>
-      <% if event.cost == 0 %>
-        <p>Free!</p>
-      <% else %>
-        <%= number_to_currency event.cost %>
       <% end %>
     </div>
   <% end %>
