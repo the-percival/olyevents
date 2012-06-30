@@ -45,6 +45,7 @@ a {
 
 .container .columns,
 .container .column { 
+  float: left;
   margin: 10px 0;
 }
 
@@ -90,7 +91,6 @@ a {
   .container .column,
   .container .columns { 
     float: left; 
-    display: inline; 
     margin: 10px 0;
   }
   
