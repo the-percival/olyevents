@@ -2,7 +2,7 @@
   <%= link_to(event) do %>
     <div class="inside">
       <% if event.photo.file? %>
-        <%= image_tag event.photo.url(:thumb) %>
+        <%= image_tag event.photo.url(:medium) %>
       <% end %>
       <% if event.featured? %>
         <span class="featured">Featured!</span>
