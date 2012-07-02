@@ -1,23 +1,28 @@
-<div class="event-show <%= @event.slug %> <% if @event.featured == true %>featured<% end %> four columns">
+<div class="event-show <%= @event.slug %> <% if @event.featured == true %>featured<% end %> sixteen columns">
   <div class="inside">
     <% if @event.photo.file? %>
-      <%= image_tag @event.photo.url(:thumb) %>
+      <%= image_tag @event.photo.url(:large) %>
     <% end %>
-    <h3><%= @event.name %></h3>
-    <p><%= @event.description %></p>
-    <p>starts: <%= @event.start_date %></p>
-    <% if @event.venue_id? %>
-      <p>at: <%= @event.venue.name %></p>
-    <% end %>
-    <% if @event.all_ages == true %>
-      <p>All ages!</p>
-    <% else %>
-      <p>21+</p>
-    <% end %>
-    <% if @event.cost == 0 %>
-      <p>Free!</p>
-    <% else %>
-      <%= number_to_currency @event.cost %>
-    <% end %>
+    <div class="details">
+      <h3><%= @event.name %></h3>
+      <p><%= @event.description %></p>
+      <p><%= @event.start_date %></p>
+      <% if @event.end_date %>
+        <p><%= @event.end_date %></p>
+      <% end %>
+      <% if @event.venue_id? %>
+        <p>at: <%= @event.venue.name %></p>
+      <% end %>
+      <% if @event.all_ages == true %>
+        <p>All ages!</p>
+      <% else %>
+        <p>21+</p>
+      <% end %>
+      <% if @event.cost == 0 %>
+        <p>Free!</p>
+      <% else %>
+        <%= number_to_currency @event.cost %>
+      <% end %>
+    </div>
   </div>
 </div>
