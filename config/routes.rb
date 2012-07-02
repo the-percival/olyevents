@@ -1,5 +1,8 @@
 Olyevents::Application.routes.draw do
 
+  match 'contact' => 'contact_form#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact_form#create', :as => 'contact', :via => :post
+  
   root :to => "events#index"
   resources :events
   resources :venues

@@ -1,0 +1,10 @@
+Some new bud named <%= @message.name %> just emailed about <%= @message.subject %>!
+
+Email them back at this address:
+<%= @message.email %>
+
+Here's the message in full:
+
+<% @message.subject %>
+
+<%= @message.body %>
