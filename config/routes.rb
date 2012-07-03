@@ -1,5 +1,7 @@
 Olyevents::Application.routes.draw do
 
+  get "about/index"
+
   match 'contact' => 'contact_form#new', :as => 'contact', :via => :get
   match 'contact' => 'contact_form#create', :as => 'contact', :via => :post
   

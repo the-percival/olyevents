@@ -17,6 +17,7 @@ gem 'acts-as-taggable-on', '~> 2.3.1'
 gem 'acts_as_indexed', '0.7.8'
 gem 'thin'
 gem 'simple_form'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'jasminerice'

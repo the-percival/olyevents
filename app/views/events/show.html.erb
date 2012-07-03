@@ -27,7 +27,7 @@
           <%= number_to_currency @event.cost %>
         <% end %>
       </div>
-      <div class="description"><%= @event.description %></div>
+      <div class="description"><%= markdown(@event.description) %></div>
       
     </div>
   </div>
