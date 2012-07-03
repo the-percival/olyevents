@@ -18,7 +18,7 @@ jQuery ->
     nextSelector: "nav.pagination span.next a"
     navSelector: "nav.pagination"
     itemSelector: "div.event"
-    extraScrollPx: 50
+    extraScrollPx: 250
     animate: false
     datatype: "html"
   , (newElements) ->
