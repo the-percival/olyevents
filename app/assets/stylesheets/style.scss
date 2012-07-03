@@ -57,12 +57,20 @@ header {
   
 }
 
-h1.title {
+h1 {
   font-size: 40px;
   letter-spacing: -3px;
   font-weight: 900;
-  text-align: center;
   margin-bottom: 20px;
+  text-align: left;
+}
+
+h1.title {
+  font-size: 35px;
+  letter-spacing: -3px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 #events {
@@ -220,5 +228,45 @@ footer {
     font-size: 9px;
     text-transform: uppercase;
     color: #555;
+  }
+}
+
+form {
+  padding-top: 20px;
+  
+  label, input {
+    clear: both;
+    float: none;
+    display: block;
+  }
+  
+  label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  input[type="text"] {
+    height: 30px;
+    width: 500px;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    padding: 5px 10px;
+    width: 500px;
+    font-weight: 300;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    outline: none;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    
   }
 }

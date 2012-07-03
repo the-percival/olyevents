@@ -5,10 +5,11 @@ this is a super simple events web app for olympia, wa.
 
 ## roadmap:
 
-### version 0.0.1:
+### completed: version 0.0.1:
 - event index and show pages.  
 - list events using infinite scroll and masonry.
 - add redcarpet for markdown input.
+- add contact form
 
 ### version 0.0.2:
 - make events searchable, sortable, and filterable
@@ -18,7 +19,7 @@ this is a super simple events web app for olympia, wa.
 - allow users to have accounts.
 - add markdown help text.
 - add facebook / google events info to events
-- create third-party javascript so that lists of events with specific venues and tags can be embedded on other websites. 
+- create embeddable javascript so that lists of events with specific venues and tags can be embedded on other websites. 
 
 ### version 0.0.4:
 - create iphone / android apps
