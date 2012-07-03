@@ -16,6 +16,7 @@ this is a super simple events web app for olympia, wa.
 - design venues index and show pages. link to them from events.
 - design index and show pages for tags. link to them from events.
 - clean up design.
+- make it so the design doesn't break when a user doesn't add an image (default image).
 
 ### version 0.2.0:  
 - allow users to have accounts.
