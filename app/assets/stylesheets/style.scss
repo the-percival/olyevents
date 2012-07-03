@@ -16,6 +16,10 @@ span.small-ital {
   font-style: italic;
 }
 
+span.light {
+  color: #aaa;
+}
+
 header {
   background-color: rgba(0, 0, 0, .6);
   color: #fff;
@@ -88,16 +92,16 @@ h1.title {
     -moz-box-shadow: 0 1px 3px rgba(25,25,25,0.4);
     -webkit-box-shadow: 0 1px 3px rgba(25, 25, 25, 0.4);
   }
-  
+
   .inside:hover, .inside:focus {
     background-color: rgba(255, 255, 255, .8);
   }
-  
+
   img {
     width: 100%;
     border: 1px solid #ccc;
   }
-  
+
   h3 {
     font-weight: 900;
     font-size: 15px;
@@ -122,23 +126,61 @@ h1.title {
   }
   
   .details {
-    
-    position: absolute;
-    top: 0;
-    margin: 40px 0;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, .5);
+    margin: 10px 13px 40px 0;
+    padding: 20px;
+    display: block;
+    position: static;
     
     h3 {
       font-size: 50px;
+      line-height: 45px;
       font-weight: 900;
       letter-spacing: -3px;
       margin-bottom: 15px;
     }
+  
+    div.info {
+      font-size: 12px;
+      color: #777;
+    }
+  
+    div.description {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .details {
+      position: absolute;
+      top: 0;
+      margin: 40px 0;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, .8);
+      width: 60%;
+    
+      h3 {
+        font-size: 50px;
+        line-height: 45px;
+        font-weight: 900;
+        letter-spacing: -3px;
+        margin-bottom: 15px;
+      }
+    
+      div.info {
+        font-size: 12px;
+        color: #777;
+      }
+    
+      div.description {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    
+    }
   }
 }
-
-
 
 nav.pagination {
   display: none;

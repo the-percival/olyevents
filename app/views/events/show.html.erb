@@ -5,24 +5,30 @@
     <% end %>
     <div class="details">
       <h3><%= @event.name %></h3>
-      <p><%= @event.description %></p>
-      <p><%= @event.start_date %></p>
-      <% if @event.end_date %>
-        <p><%= @event.end_date %></p>
-      <% end %>
-      <% if @event.venue_id? %>
-        <p>at: <%= @event.venue.name %></p>
-      <% end %>
-      <% if @event.all_ages == true %>
-        <p>All ages!</p>
-      <% else %>
-        <p>21+</p>
-      <% end %>
-      <% if @event.cost == 0 %>
-        <p>Free!</p>
-      <% else %>
-        <%= number_to_currency @event.cost %>
-      <% end %>
+      <div class="info">
+        <p><%= @event.start_date %>
+        <% if @event.end_date %>
+          <%= @event.end_date %>
+        <% end %>
+        <span class="light">::</span>
+        <% if @event.venue_id? %>
+          at: <%= @event.venue.name %>
+        <% end %>
+        <span class="light">::</span>
+        <% if @event.all_ages == true %>
+          All ages!
+        <% else %>
+          21+
+        <% end %>
+        <span class="light">::</span>
+        <% if @event.cost == 0 %>
+          Free!
+        <% else %>
+          <%= number_to_currency @event.cost %>
+        <% end %>
+      </div>
+      <div class="description"><%= @event.description %></div>
+      
     </div>
   </div>
 </div>

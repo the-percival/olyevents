@@ -10,17 +10,17 @@
       <h3><%= event.name %></h3>
       <p><%= event.start_date %></p>
       <% if event.cost == 0 %>
-        <p>Free!</p>
+        Free! <span class="small-light">::</a> 
       <% else %>
-        <%= number_to_currency event.cost %>
+        <%= number_to_currency event.cost %> <span class="light">::</span> 
+      <% end %>
+      <% if event.all_ages == true %>
+        <span>All ages!</span>
+      <% else %>
+        <span>21+</span>
       <% end %>
       <% if event.venue_id? %>
         <p><span class="small-ital">at</span> <%= event.venue.name %></p>
-      <% end %>
-      <% if event.all_ages == true %>
-        <p>All ages!</p>
-      <% else %>
-        <p>21+</p>
       <% end %>
     </div>
   <% end %>
