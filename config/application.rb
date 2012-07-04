@@ -76,6 +76,7 @@ module Olyevents
       :domain               => "olylab.com",
       :user_name            => "heybuddy@olylab.com",
       :password             => ENV['OLYLAB_PASSWORD'],
+      :authentication       => :plain,
       :enable_starttls_auto => true
     }
 
